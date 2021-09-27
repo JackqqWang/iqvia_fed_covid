@@ -1,0 +1,25 @@
+{
+"STC" :
+[{
+	"iterations" : [400],
+	"n_clients" : [5],
+	"participation_rate" : [1.0],
+	"balancedness" : [1.0],
+	"compression" : [["stc_updown", {"p_up": 0.1, "p_down":  0.1}]],
+	"log_frequency" : [5],
+	"log_path" : ["result/Iqvia_STC/"]
+}],
+
+"FL" :
+[{
+	"iterations" : [12000],
+	"algorithm" : ["per_FedAvg"],
+	"augmentation" : ["None"],
+	"n_clients" : [29],
+	"participation_rate" : [0.4],
+	"balancedness" : [1.0],
+	"compression" : [["fed_avg", {"n": 100}]],
+	"log_frequency" : [5],
+	"log_path" : ["result/per_FedAvg/"]
+}]
+}
